@@ -9,19 +9,27 @@ import ProductList from './components/BaiTapLayout/ProductList';
 import Slider from './components/BaiTapLayout/Slider';
 import BannerSale from './components/BaiTapLayout/BannerSale';
 import DemoData from './DataBinding/DemoData';
+import RenderWidthMap from './RenderWidthMap/RenderWidthMap';
+import BaiTapRenderMap from './RenderWidthMap/BaiTapRenderMap';
+import DemoProps from './Props/DemoProps';
+import ThongTinSinhVien from './Props/ThongTinSinhVien';
 
 
 
 function App() {
   return (
     <div className="App">
-      <BaiTapLayout />
+      {/* <BaiTapLayout />
       <BTHeader />
       <DataBinding />
       <DemoData />
       <Slider />
       <ProductList />
-      <BannerSale />
+      <BannerSale /> */}
+      <RenderWidthMap />
+      <BaiTapRenderMap />
+      <DemoProps />
+  
       
     </div>
   );
