@@ -8,6 +8,12 @@ import RenderWithMap from './RenderWithMap/RenderWithMap';
 import BaiTapRenderMap from './RenderWithMap/BaiTapRenderMap';
 import DemoProps from './Props/DemoProps';
 import DemoQLSP from './Props/DemoQLSP/DemoQLSP';
+import Demopropqlsp from './Props/Demopropqlsp/Demopropqlsp';
+// import BTGioHangReDux from './Redux/BTGioHangReDux/BTGioHangReDux';
+import BTGioHangReDux from './Redux/BTGioHangNew/BTGioHangNew';
+import BTGioHangNew from './Redux/BTGioHangNew/BTGioHangNew';
+
+
 
 
 function App() {
@@ -18,7 +24,10 @@ function App() {
       {/* <RenderWithMap /> */}
       {/* <BaiTapRenderMap  /> */}
       {/* <DemoProps /> */}
-      <DemoQLSP />
+      {/* <Demopropqlsp /> */}
+      {/* <DemoQLSP /> */}
+      {/* <BTGioHangReDux /> */}
+      <BTGioHangNew />
     </div>
   );
 }

@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
-import BTFooter from './BTFooter'
+import React, { Component } from "react";
 import BTHeader from './BTHeader'
-import BTProductList from './BTProductList'
-import BTSlider from './BTSlider'
-
+import BTProducList from "./BTProducList";
+import BTProductItem from "./BTProductItem";
+import BTProduct from "./BTProduct";
 export default class BaiTapLayout extends Component {
-    render() {
-        return (
-            <div>
-                <BTHeader />
-                <BTSlider />
-                <BTProductList />
-                <BTFooter />
-            </div>
-        )
-    }
+  render() {
+    return <div>
+      <BTHeader />
+      <BTProducList />
+      <BTProduct/>
+    </div>;
+  }
 }
