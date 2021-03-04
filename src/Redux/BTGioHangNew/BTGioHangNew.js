@@ -3,7 +3,7 @@ import DMGioHangReduxDM from './DMGioHangReduxDM'
 import DMSanPhamRedux from './DMSanPhamRedux'
 
 export default class BTGioHangNew extends Component {
-    mangSanPham = [
+    mangSanPham = [ 
         {
             "maSP": 1,
             "tenSP": "VinSmart Live",

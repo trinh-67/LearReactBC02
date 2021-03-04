@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-//ket noi react component voi redux store
+//ket noi react component voi redux store 
 import { connect} from "react-redux";
 
 
- class DMGioHangReduxDM extends Component {
+ class DMGioHangReduxDM extends Component { 
     render() {
         return (
             <div className="container">
@@ -26,8 +26,8 @@ import { connect} from "react-redux";
                                    <td>{spGioHang.maSP}</td>
                                    <td>{spGioHang.tenSP}</td>
                                    <td>{spGioHang.soLuong}</td>
-                                   <td>{spGioHang.gia}</td>
-                                   <td>{spGioHang.gia * spGioHang.soLuong}</td>
+                                   <td>{spGioHang.giaBan}</td>
+                                   <td>{spGioHang.giaBan * spGioHang.soLuong}</td>
                                </tr>
                            )
                        })}
@@ -38,14 +38,16 @@ import { connect} from "react-redux";
     }
 }
 
-//chuyen state tren redux tro thanh props cua component
+//Hàm chuyển state trên redux trở thành props của component
+//state đại diện cho rootReducer
+const mapStateToProps = (state) => {
 
-//State đại diện cho rootReducer
-const mapStateToProps = (state) =>{
+    //Tạo props từ state redux
     return {
         gioHang: state.gioHangReducer.gioHang
     }
 }
+
 
 //ket noi giua component va redux
 export default connect(mapStateToProps)(DMGioHangReduxDM)

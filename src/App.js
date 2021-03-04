@@ -9,9 +9,10 @@ import BaiTapRenderMap from './RenderWithMap/BaiTapRenderMap';
 import DemoProps from './Props/DemoProps';
 import DemoQLSP from './Props/DemoQLSP/DemoQLSP';
 import Demopropqlsp from './Props/Demopropqlsp/Demopropqlsp';
-// import BTGioHangReDux from './Redux/BTGioHangReDux/BTGioHangReDux';
-import BTGioHangReDux from './Redux/BTGioHangNew/BTGioHangNew';
+import BTGioHangReDux from './Redux/BTGioHangReDux/BTGioHangReDux';
+// import BTGioHangReDux from './Redux/BTGioHangNew/BTGioHangNew';
 import BTGioHangNew from './Redux/BTGioHangNew/BTGioHangNew';
+import BaiTapGameXucXac from './Redux/DeMoRedux/BaiTapGameXucXac/BaiTapGameXucXac';
 
 
 
@@ -28,6 +29,8 @@ function App() {
       {/* <DemoQLSP /> */}
       {/* <BTGioHangReDux /> */}
       <BTGioHangNew />
+      {/* <BTGioHangReDux/> */}
+      {/* <BaiTapGameXucXac/> */}
     </div>
   );
 }
